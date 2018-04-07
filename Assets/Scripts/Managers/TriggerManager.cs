@@ -32,6 +32,7 @@ public class TriggerManager : MonoBehaviour {
 
         // Start rest of broadcast
         StartCoroutine(ActivateDrugs());
+        StartCoroutine(RandomChat());
     }
 
     IEnumerator ActivateDrugs() {
@@ -54,6 +55,17 @@ public class TriggerManager : MonoBehaviour {
         }
 
         Debug.Log("Finished broadcast");
+        StopAllCoroutines();
+    }
+
+    IEnumerator RandomChat() {
+        while (true) {
+            yield return new WaitForSeconds(Random.Range(1, 2));
+            ReadRandomChain(triggers
+                .Where(t => t.type == Trigger.Type.RANDOM)
+                .OrderBy(t => Random.value)
+                .FirstOrDefault());
+        }
     }
 
     public static void ReadRandomChain(Trigger trigger) {
@@ -70,6 +82,7 @@ public class TriggerManager : MonoBehaviour {
         // Create our triggers menu
         Dictionary<string, Trigger> triggersDict = new Dictionary<string, Trigger>();
         triggersDict.Add("Filler/First", new Trigger { type = Trigger.Type.FIRST, adviceRating = 1 });
+        triggersDict.Add("Filler/Random", new Trigger { type = Trigger.Type.RANDOM });
         triggersDict.Add("Events/Pepper", new DrugTrigger("Pepper"));
         triggersDict.Add("Events/Cute Sneeze", new CuteSneezeTrigger());
         return triggersDict;

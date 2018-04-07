@@ -9,20 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
-  m_Name: Second
+  m_Name: wtf
   m_EditorClassIdentifier: 
-  trigger: Filler/First
+  trigger: Filler/Random
   comments:
   - commenterNumber: 0
-    delay: 0.1
-    comment: Hype!
-  - commenterNumber: 1
-    delay: 0.1
-    comment: First!
-  - commenterNumber: 1
-    delay: 0.3
-    comment: Damn it!
-  - commenterNumber: 2
-    delay: 0.4
-    comment: First
+    delay: 0
+    comment: what the fuck does wtf mean
   excitementDelta: 0
