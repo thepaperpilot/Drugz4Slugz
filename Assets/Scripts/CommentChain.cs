@@ -12,8 +12,8 @@ public class CommentChain : ScriptableObject {
         public float delay;
         public string comment;
     }
-
-    public Trigger trigger;
+    
+    public string trigger = "Filler/First";
     public Comment[] comments;
     [Range(-5, 5)]
     public int excitementDelta = 0;

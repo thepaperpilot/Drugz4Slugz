@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-public class Trigger : Object {
+public class Trigger {
 
     public enum Type {
         FIRST,
@@ -10,4 +11,9 @@ public class Trigger : Object {
 
     public Type type;
     public int adviceRating;
+
+    // For use in Type.EVENT triggers
+    public virtual bool CheckValid(Slug slug, Drug.DrugState state) {
+        return false;
+    }
 }

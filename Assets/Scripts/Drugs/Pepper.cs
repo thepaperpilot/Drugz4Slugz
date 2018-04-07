@@ -5,7 +5,12 @@ public class Pepper : Drug {
     public AudioClip sneezeSound;
 
     // Apply immediate effects
-    public override void Apply(Slug slug, DrugState state) {
-        slug.audio.PlayOneShot(sneezeSound);
+    public override void Apply(DrugState state) {
+
+    }
+
+    // Act while live
+    public override void Play(DrugState state) {
+        state.slug.audio.PlayOneShot(sneezeSound);
     }
 }

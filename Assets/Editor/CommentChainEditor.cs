@@ -13,8 +13,6 @@ public class CommentChainEditor : Editor {
     private string trigger;
     private Rect menuRect;
 
-    private Dictionary<string, Trigger> triggersDict;
-
     private void OnEnable() {
         CreateTriggersMenu();
         CreateCommentList();
@@ -45,16 +43,10 @@ public class CommentChainEditor : Editor {
 
     void CreateTriggersMenu() {
         // Create our triggers menu
-        triggersDict = new Dictionary<string, Trigger>();
         triggers = new GenericMenu();
-        AddTrigger("Filler/First", new Trigger { type = Trigger.Type.FIRST, adviceRating = 1 });
-    }
-
-    void AddTrigger(string path, Trigger trigger) {
-        if (this.trigger == null && serializedObject.FindProperty("trigger").objectReferenceValue == trigger)
-            this.trigger = path;
-        triggers.AddItem(new GUIContent(path), false, clickHandler, trigger);
-        triggersDict.Add(path, trigger);
+        foreach (string path in TriggerManager.CreateTriggersDict().Keys)
+            triggers.AddItem(new GUIContent(path), false, clickHandler, path);
+        trigger = serializedObject.FindProperty("trigger").stringValue;
     }
 
     void CreateCommentList() {
@@ -90,8 +82,8 @@ public class CommentChainEditor : Editor {
     }
 
     void clickHandler(object target) {
-        trigger = triggersDict.Where(pair => pair.Value == (Object)target).First().Key;
-        serializedObject.FindProperty("trigger").objectReferenceValue = (Object)target;
+        trigger = (string)target;
+        serializedObject.FindProperty("trigger").stringValue = trigger;
         serializedObject.ApplyModifiedProperties();
     }
 }

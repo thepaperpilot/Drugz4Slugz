@@ -1364,6 +1364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed9f8731fc5ffb948b28155309bcc864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drugActivationDelay: 2
+  slugEnclosures: {fileID: 1519464497}
 --- !u!114 &1569604424
 MonoBehaviour:
   m_ObjectHideFlags: 0

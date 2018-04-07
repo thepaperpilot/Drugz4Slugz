@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,8 +12,8 @@ public class Slug : MonoBehaviour {
 
     [HideInInspector]
     public new AudioSource audio;
-
-    private List<Drug.DrugState> drugs = new List<Drug.DrugState>();
+    [HideInInspector]
+    public HashSet<Drug.DrugState> drugs = new HashSet<Drug.DrugState>();
 
     void Awake() {
         audio = GetComponent<AudioSource>();
@@ -24,8 +25,9 @@ public class Slug : MonoBehaviour {
     }
 
     public void ApplyDrug(Drug drug) {
-        Drug.DrugState state = drug.GetDrugState();
-        drug.Apply(this, state);
-        drugs.Add(state);
+        Drug.DrugState state = drugs.Where(d => d.drug == drug).FirstOrDefault() ?? drug.GetDrugState(this);
+        state.strength++;
+        drug.Apply(state);
+        if (!drugs.Contains(state)) drugs.Add(state);
     }
 }
