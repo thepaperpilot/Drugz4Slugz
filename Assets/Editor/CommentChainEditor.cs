@@ -47,7 +47,7 @@ public class CommentChainEditor : Editor {
         // Create our triggers menu
         triggersDict = new Dictionary<string, Trigger>();
         triggers = new GenericMenu();
-        AddTrigger("test/test", ScriptableObject.CreateInstance<Trigger>());
+        AddTrigger("Filler/First", new Trigger { type = Trigger.Type.FIRST, adviceRating = 1 });
     }
 
     void AddTrigger(string path, Trigger trigger) {

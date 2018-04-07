@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 
-public class Trigger : ScriptableObject {
+public class Trigger : Object {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public enum Type {
+        FIRST,
+        RANDOM,
+        EVENT
+    }
+
+    public Type type;
+    public int adviceRating;
 }
