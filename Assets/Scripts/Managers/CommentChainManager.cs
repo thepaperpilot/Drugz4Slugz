@@ -12,8 +12,11 @@ public class CommentChainManager : MonoBehaviour {
     public GameObject messagePrefab;
     public string[] commenterNames;
 
+    private ScrollRect scrollRect;
+
     void Awake() {
         instance = this;
+        scrollRect = chat.GetComponentInParent<ScrollRect>();
     }
     
 	void Start () {
@@ -33,6 +36,9 @@ public class CommentChainManager : MonoBehaviour {
             yield return new WaitForSeconds(comment.delay);
             Text text = Instantiate(messagePrefab, chat.transform).GetComponentInChildren<Text>();
             text.text = chain.GetName(comment.commenterNumber) + ": " + comment.comment;
+            yield return new WaitForEndOfFrame();
+            yield return new WaitForEndOfFrame();
+            scrollRect.verticalNormalizedPosition = 0;
         }
     }
 }
