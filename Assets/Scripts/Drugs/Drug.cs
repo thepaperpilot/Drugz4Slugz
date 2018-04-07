@@ -6,7 +6,11 @@ public abstract class Drug : MonoBehaviour {
         public int strength;
     }
 
-    public abstract DrugState GetDrugState();
+    public virtual DrugState GetDrugState() {
+        return new DrugState {
+            strength = 1
+        };
+    }
 
     // Apply immediate effects
     public virtual void Apply(Slug slug, DrugState state) {
