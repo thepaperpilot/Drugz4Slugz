@@ -856,7 +856,7 @@ MonoBehaviour:
     m_Top: 4
     m_Bottom: 4
   m_ChildAlignment: 1
-  m_Spacing: 4
+  m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 1
@@ -1349,25 +1349,25 @@ MonoBehaviour:
   messagePrefab: {fileID: 1512506718370494, guid: 83adb26f4759cf441825da309c9bfd54,
     type: 2}
   commenterNames:
-  - Anthony
-  - Grant
-  - Hudson
-  - Haley
-  - Grant Prime
-  - Brandon
-  - Pearce
-  - Tyler
-  - Shrinath
-  - Kyle
-  - Gwyneth
-  - Galen
-  - Sallazhar
-  - Sintour
-  - Rob
-  - Roamin
-  - Coe
-  - Justin
-  - Shane
+  - <#f7adf7>Anthony</color>
+  - <#abf99f>Grant</color>
+  - <#86efdc>Hudson</color>
+  - <#b76ee5>Haley</color>
+  - <#f9a4b3>Grant Prime</color>
+  - <#f7999a>Brandon</color>
+  - <#f497b9>Pearce</color>
+  - <#f9a9d7>Tyler</color>
+  - <#7fa2e2>Shrinath</color>
+  - <#a8b8ff>Kyle</color>
+  - <#ad88fc>Gwyneth</color>
+  - <#f4aead>Galen</color>
+  - <#fc71ab>Sallazhar</color>
+  - <#ff72e0>Sintour</color>
+  - <#8cb6ea>Rob</color>
+  - <#f9857c>Roamin</color>
+  - <#ed9b82>Coe</color>
+  - <#8df484>Justin</color>
+  - <#ffcce3>Shane</color>
 --- !u!114 &1569604423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,6 +1380,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drugActivationDelay: 3
+  randomChatMin: 1
+  randomChatMax: 8
   slugEnclosures: {fileID: 1519464497}
 --- !u!114 &1569604424
 MonoBehaviour:
@@ -1620,7 +1622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.2, g: 0.23529412, b: 0.2901961, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

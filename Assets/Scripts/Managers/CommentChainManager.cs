@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,8 +35,8 @@ public class CommentChainManager : MonoBehaviour {
     IEnumerator _ReadCommentChain(CommentChain chain) {
         foreach (CommentChain.Comment comment in chain.comments) {
             yield return new WaitForSeconds(comment.delay);
-            Text text = Instantiate(messagePrefab, chat.transform).GetComponentInChildren<Text>();
-            text.text = chain.GetName(comment.commenterNumber) + ": " + comment.comment;
+            TextMeshProUGUI text = Instantiate(messagePrefab, chat.transform).GetComponentInChildren<TextMeshProUGUI>();
+            text.text = "<b>" + chain.GetName(comment.commenterNumber) + "</b>: " + comment.comment;
             yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame();
             scrollRect.verticalNormalizedPosition = 0;

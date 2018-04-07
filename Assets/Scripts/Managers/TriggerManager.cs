@@ -10,6 +10,8 @@ public class TriggerManager : MonoBehaviour {
     public static Dictionary<string, Trigger> triggersDict;
 
     public float drugActivationDelay = 2f;
+    public float randomChatMin = 1f;
+    public float randomChatMax = 8f;
     public Transform slugEnclosures;
 
     private Trigger[] triggers;
@@ -60,7 +62,7 @@ public class TriggerManager : MonoBehaviour {
 
     IEnumerator RandomChat() {
         while (true) {
-            yield return new WaitForSeconds(Random.Range(1, 2));
+            yield return new WaitForSeconds(Random.Range(randomChatMin, randomChatMax));
             ReadRandomChain(triggers
                 .Where(t => t.type == Trigger.Type.RANDOM)
                 .OrderBy(t => Random.value)
