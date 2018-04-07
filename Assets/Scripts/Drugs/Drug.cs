@@ -2,6 +2,8 @@
 
 public abstract class Drug : MonoBehaviour {
 
+    public Texture2D cursorImage;
+
     public class DrugState {
         public int strength;
     }
