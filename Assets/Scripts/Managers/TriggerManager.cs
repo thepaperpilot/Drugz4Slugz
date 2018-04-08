@@ -86,6 +86,7 @@ public class TriggerManager : MonoBehaviour {
 
         Debug.Log("Finished broadcast");
         StopAllCoroutines();
+        CommentChainManager.instance.StopAllCoroutines();
         fade.SetFloat("Speed", 1);
         Delay(2, NewDay);
     }

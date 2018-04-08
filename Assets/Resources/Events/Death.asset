@@ -19,6 +19,9 @@ MonoBehaviour:
   - commenterNumber: 1
     delay: 0.2
     comment: Wow!
+  - commenterNumber: 6
+    delay: 0.05
+    comment: <sprite=0>
   - commenterNumber: 2
     delay: 0.1
     comment: Is it dead?!
