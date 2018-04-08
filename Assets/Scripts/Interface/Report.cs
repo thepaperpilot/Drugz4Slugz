@@ -12,7 +12,6 @@ public class Report : MonoBehaviour {
 
     public void Generate() {
         gameObject.SetActive(true);
-        Debug.Log(DayManager.instance.excitement);
         
         views.text = Mathf.RoundToInt(
                 Random.value * Mathf.Pow(10, 1 + 2 * Mathf.Log(Mathf.Max(1, DayManager.instance.excitement)))).ToString();

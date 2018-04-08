@@ -39,7 +39,8 @@ public class TriggerManager : MonoBehaviour {
 
     IEnumerator ActivateDrugs() {
         yield return new WaitForSeconds(drugActivationDelay);
-        foreach (Drug.DrugState drug in DayManager.slugs.SelectMany(s => s.drugs).OrderBy(r => Random.value)) {
+        IEnumerable<Drug.DrugState> drugs = DayManager.slugs.SelectMany(s => s.drugs);
+        foreach (Drug.DrugState drug in drugs.OrderBy(r => Random.value)) {
             // Activate drug
             drug.drug.Play(drug);
 
@@ -52,6 +53,8 @@ public class TriggerManager : MonoBehaviour {
             // Wait before doing next drug activation
             yield return new WaitForSeconds(drugActivationDelay);
         }
+        if (drugs.Count() < 2)
+            yield return new WaitForSeconds(drugActivationDelay * (2 - drugs.Count()));
 
         Debug.Log("Finished broadcast");
         StopAllCoroutines();

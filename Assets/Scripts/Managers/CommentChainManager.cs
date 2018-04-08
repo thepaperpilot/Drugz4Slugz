@@ -43,7 +43,7 @@ public class CommentChainManager : MonoBehaviour {
             yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame();
             // Force layout rebuild
-            VerticalLayoutGroup layout = scrollRect.GetComponent<VerticalLayoutGroup>();
+            VerticalLayoutGroup layout = chat.transform.GetComponent<VerticalLayoutGroup>();
             layout.enabled = false;
             layout.enabled = true;
             scrollRect.verticalNormalizedPosition = 0;
