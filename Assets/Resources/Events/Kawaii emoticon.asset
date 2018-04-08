@@ -9,20 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
-  m_Name: Caps Lock
+  m_Name: Kawaii emoticon
   m_EditorClassIdentifier: 
-  trigger: Filler/Random
+  trigger: Events/Cute Sneeze
   comments:
   - commenterNumber: 0
-    delay: 0
-    comment: HI EVERYBODY!!!!!!!!!!!
-  - commenterNumber: 1
     delay: 1
-    comment: try pressing the the Caps Lock key
-  - commenterNumber: 0
-    delay: 1
-    comment: O THANKS!!! IT'S SO MUCH EASIER TO WRITE NOW!!!!!!
-  - commenterNumber: 1
-    delay: 1
-    comment: fuck me
-  excitementDelta: 0
+    comment: "So cute!! (\u25D5\u203F\u25D5\u273F)"
+  excitementDelta: 1

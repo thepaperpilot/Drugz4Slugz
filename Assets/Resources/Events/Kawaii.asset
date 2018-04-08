@@ -14,6 +14,6 @@ MonoBehaviour:
   trigger: Events/Cute Sneeze
   comments:
   - commenterNumber: 0
-    delay: 0.2
-    comment: "So cute!! (\u25D5\u203F\u25D5\u273F)"
+    delay: 1
+    comment: Kawaii :3
   excitementDelta: 1

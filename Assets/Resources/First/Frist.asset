@@ -14,6 +14,6 @@ MonoBehaviour:
   trigger: Filler/First
   comments:
   - commenterNumber: 0
-    delay: 0.2
+    delay: 1
     comment: Frist
   excitementDelta: 0

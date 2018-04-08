@@ -14,15 +14,15 @@ MonoBehaviour:
   trigger: Filler/First
   comments:
   - commenterNumber: 0
-    delay: 0.2
+    delay: 1
     comment: Hype!
   - commenterNumber: 1
-    delay: 0.1
+    delay: 0.5
     comment: First!
   - commenterNumber: 1
-    delay: 0.3
+    delay: 1.5
     comment: Damn it!
   - commenterNumber: 2
-    delay: 0.4
+    delay: 2
     comment: First
   excitementDelta: 0

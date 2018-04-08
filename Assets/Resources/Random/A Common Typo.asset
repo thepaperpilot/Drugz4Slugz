@@ -17,15 +17,15 @@ MonoBehaviour:
     delay: 0
     comment: YOU ALL SUCK DICK
   - commenterNumber: 0
-    delay: 0.1
+    delay: 0.5
     comment: er.
   - commenterNumber: 0
-    delay: 0.1
+    delay: 0.5
     comment: hi.
   - commenterNumber: 1
-    delay: 0.2
+    delay: 1
     comment: A common typo
   - commenterNumber: 0
-    delay: 0.2
+    delay: 1
     comment: the keys are like right next to each other.
   excitementDelta: 0

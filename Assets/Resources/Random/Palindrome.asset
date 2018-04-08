@@ -17,6 +17,6 @@ MonoBehaviour:
     delay: 0
     comment: wtf is a palindrome
   - commenterNumber: 1
-    delay: 0.3
+    delay: 1.5
     comment: No its not dude
   excitementDelta: 0
