@@ -34,4 +34,19 @@ public class Slug : MonoBehaviour {
         drug.Apply(state);
         if (!drugs.Contains(state)) drugs.Add(state);
     }
+
+    public void Sleep() {
+        foreach (Drug.DrugState state in drugs) {
+            if (state.strength - state.resistance > state.drug.maxDosage) {
+                DestroyImmediate(state.slug.gameObject);
+                return;
+            } else {
+                int resist = Mathf.CeilToInt(state.strength / 4f);
+                state.resistance += resist;
+                state.strength -= resist;
+                state.drug.Overnight(state);
+            }
+        }
+        drugs = new HashSet<Drug.DrugState>(drugs.Where(d => d.strength > 0));
+    }
 }

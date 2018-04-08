@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorImage: {fileID: 2800000, guid: c708cca45b7551c4896ab099d8adec75, type: 3}
+  maxDosage: 10
 --- !u!114 &52797081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,7 +832,7 @@ Prefab:
     - target: {fileID: 224617842217862408, guid: 790661bcd01b3f741b9c29def1856283,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -54
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224794391479310690, guid: 790661bcd01b3f741b9c29def1856283,
         type: 2}
@@ -876,7 +877,7 @@ Prefab:
     - target: {fileID: 224617842217862408, guid: 790661bcd01b3f741b9c29def1856283,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224691166327446490, guid: 790661bcd01b3f741b9c29def1856283,
         type: 2}
@@ -1394,6 +1395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorImage: {fileID: 2800000, guid: c708cca45b7551c4896ab099d8adec75, type: 3}
+  maxDosage: 1
   colorMod: 0.4
   colorDuration: 1
 --- !u!114 &671762659
@@ -1942,7 +1944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000018203638}
+  m_AnchoredPosition: {x: 0, y: -0.0000017250724}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &928672829
@@ -4477,6 +4479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorImage: {fileID: 2800000, guid: c708cca45b7551c4896ab099d8adec75, type: 3}
+  maxDosage: 10
   sneezeSound: {fileID: 8300000, guid: 8a7d35f1ab5b3464391bc1b358a78868, type: 3}
 --- !u!114 &1812758336
 MonoBehaviour:

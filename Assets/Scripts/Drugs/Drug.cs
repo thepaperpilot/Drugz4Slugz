@@ -3,16 +3,17 @@
 public abstract class Drug : MonoBehaviour {
 
     public Texture2D cursorImage;
+    public int maxDosage = 10;
 
     public class DrugState {
-        public int strength;
+        public int strength = 0;
+        public int resistance = 0;
         public Drug drug;
         public Slug slug;
     }
 
     public virtual DrugState GetDrugState(Slug slug) {
         return new DrugState {
-            strength = 0,
             drug = this,
             slug = slug
         };

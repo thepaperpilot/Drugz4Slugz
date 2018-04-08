@@ -26,8 +26,7 @@ public class DayManager : MonoBehaviour {
     public void NewDay() {
         slugs = slugEnclosures.GetComponentsInChildren<Slug>();
         foreach (Slug slug in slugs)
-            foreach (Drug.DrugState state in slug.drugs)
-                state.drug.Overnight(state);
+            slug.Sleep();
         foreach (Transform enclosure in slugEnclosures) {
             if (enclosure.childCount > 3) {
                 if (enclosure.GetChild(2).gameObject.activeSelf) {
