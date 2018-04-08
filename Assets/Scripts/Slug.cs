@@ -7,6 +7,10 @@ using UnityEngine.UI;
 public class Slug : MonoBehaviour {
     
     public Image body;
+    public Image eyes;
+    public Image mouth;
+    public Image blush;
+    public Image wings;
     public float minSize = .8f;
     public float maxSize = 1.2f;
 
