@@ -43,6 +43,9 @@ public class TriggerManager : MonoBehaviour {
     }
 
     public void NewDay() {
+        foreach (Slug slug in slugEnclosures.GetComponentsInChildren<Slug>())
+            foreach (Drug.DrugState state in slug.drugs)
+                state.drug.Overnight(state);
         foreach (Transform enclosure in slugEnclosures) {
             if (enclosure.childCount > 3) {
                 if (enclosure.GetChild(2).gameObject.activeSelf) {
@@ -57,9 +60,6 @@ public class TriggerManager : MonoBehaviour {
                 enclosure.GetChild(2).gameObject.SetActive(false);
             }
         }
-        foreach (Slug slug in slugEnclosures.GetComponentsInChildren<Slug>())
-            foreach (Drug.DrugState state in slug.drugs)
-                state.drug.Overnight(state);
         liveButton.interactable = true;
         fade.SetFloat("Speed", -1);
     }
