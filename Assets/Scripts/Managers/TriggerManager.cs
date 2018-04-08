@@ -63,6 +63,7 @@ public class TriggerManager : MonoBehaviour {
         }
         liveButton.interactable = true;
         endDayButton.gameObject.SetActive(false);
+        endDayButton.GetComponentInParent<Canvas>().GetComponent<CanvasAnimator>().Reset();
         CommentChainManager.Reset();
         fade.SetFloat("Speed", -1);
     }
