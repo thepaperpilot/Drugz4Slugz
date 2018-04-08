@@ -33,13 +33,4 @@ public class DrugManager : MonoBehaviour {
             //selected = null;
         }
     }
-
-    public static void Delay(float seconds, Action callback) {
-        instance.StartCoroutine(instance._Delay(seconds, callback));
-    }
-
-    IEnumerator _Delay(float seconds, Action callback) {
-        yield return new WaitForSeconds(seconds);
-        callback();
-    }
 }

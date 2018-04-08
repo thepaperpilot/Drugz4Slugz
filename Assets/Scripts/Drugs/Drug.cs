@@ -27,4 +27,9 @@ public abstract class Drug : MonoBehaviour {
     public virtual void Play(DrugState state) {
 
     }
+
+    // Act overnight
+    public virtual void Overnight(DrugState state) {
+
+    }
 }

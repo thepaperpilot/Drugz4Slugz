@@ -20,7 +20,7 @@ public class SlugManager : MonoBehaviour {
 
         enclosure.transform.GetChild(1).gameObject.SetActive(false);
         enclosure.transform.GetChild(2).gameObject.SetActive(true);
-        enclosure.transform.GetChild(2).GetComponentInChildren<TextMeshProUGUI>().text = 
+        enclosure.transform.GetChild(2).GetComponentInChildren<TMP_InputField>().text = 
             slimeNames.OrderBy(n => Random.value).First();
     }
 }
