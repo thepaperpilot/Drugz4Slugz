@@ -13,7 +13,7 @@ public class DrugManager : MonoBehaviour {
     }
 
     public void Pickup(Drug drug) {
-        if (selected == drug) {
+        if (selected == drug || drug == null) {
             Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
             selected = null;
         } else {

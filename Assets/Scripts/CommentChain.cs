@@ -17,6 +17,8 @@ public class CommentChain : ScriptableObject {
     public Comment[] comments;
     [Range(-5, 5)]
     public int excitementDelta = 0;
+    [Range(0, 5)]
+    public int adviceRating = 0;
 
     private Dictionary<int, string> commenterNames = new Dictionary<int, string>();
 

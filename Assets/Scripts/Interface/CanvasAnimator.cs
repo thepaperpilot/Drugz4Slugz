@@ -12,6 +12,7 @@ public class CanvasAnimator : MonoBehaviour {
     public void PrepareExperiment() {
         animator.SetFloat("Speed", 1);
         animator.Play("Slide", 0, 0);
+        DrugManager.instance.Pickup(null);
     }
 
     public void PrepareSlugs() {

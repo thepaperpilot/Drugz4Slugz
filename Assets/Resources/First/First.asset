@@ -20,3 +20,4 @@ MonoBehaviour:
     delay: 1
     comment: First.
   excitementDelta: 0
+  adviceRating: 1

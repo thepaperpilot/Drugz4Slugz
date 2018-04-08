@@ -2,6 +2,9 @@
 
 public class DeskManager : MonoBehaviour {
 
+    public static DeskManager instance;
+
+    public Report report;
     public GameObject blackout;
 
     [Header("Rect Transform")]
@@ -17,6 +20,10 @@ public class DeskManager : MonoBehaviour {
     private Vector2 savedAnchoredPosition;
     private Vector2 savedSizeDelta;
     private Vector2 savedLocalScale;
+
+    void Awake() {
+        instance = this;
+    }
 
     public void Toggle(RectTransform rect) {
         if (open == rect) Close();

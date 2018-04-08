@@ -32,6 +32,7 @@ public class CommentChainEditor : Editor {
         }
         EditorGUILayout.EndHorizontal();
         EditorGUILayout.PropertyField(serializedObject.FindProperty("excitementDelta"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("adviceRating"));
 
         EditorGUILayout.Space();
 
