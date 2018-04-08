@@ -20,7 +20,7 @@ public class CommentChainManager : MonoBehaviour {
         scrollRect = chat.GetComponentInParent<ScrollRect>();
     }
     
-	void Start () {
+	void Start() {
         Object[] resources = Resources.LoadAll("", typeof(CommentChain));
         commentChains = new CommentChain[resources.Length];
         for (int i = 0; i < commentChains.Length; i++) {
@@ -41,5 +41,10 @@ public class CommentChainManager : MonoBehaviour {
             yield return new WaitForEndOfFrame();
             scrollRect.verticalNormalizedPosition = 0;
         }
+    }
+
+    public static void Reset() {
+        foreach (Transform transform in instance.chat.transform)
+            Destroy(transform.gameObject);
     }
 }

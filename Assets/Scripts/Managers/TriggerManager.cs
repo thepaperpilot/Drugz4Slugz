@@ -61,6 +61,7 @@ public class TriggerManager : MonoBehaviour {
             }
         }
         liveButton.interactable = true;
+        CommentChainManager.Reset();
         fade.SetFloat("Speed", -1);
     }
 
