@@ -17,6 +17,7 @@ public class TriggerManager : MonoBehaviour {
     public Transform slugEnclosures;
     public Animator fade;
     public Button liveButton;
+    public Button endDayButton;
 
     private Trigger[] triggers;
 
@@ -61,8 +62,15 @@ public class TriggerManager : MonoBehaviour {
             }
         }
         liveButton.interactable = true;
+        endDayButton.gameObject.SetActive(false);
         CommentChainManager.Reset();
         fade.SetFloat("Speed", -1);
+    }
+
+    public void EndDay() {
+        CommentChainManager.instance.StopAllCoroutines();
+        fade.SetFloat("Speed", 1);
+        Delay(2, NewDay);
     }
 
     IEnumerator ActivateDrugs() {
@@ -86,9 +94,7 @@ public class TriggerManager : MonoBehaviour {
 
         Debug.Log("Finished broadcast");
         StopAllCoroutines();
-        CommentChainManager.instance.StopAllCoroutines();
-        fade.SetFloat("Speed", 1);
-        Delay(2, NewDay);
+        endDayButton.gameObject.SetActive(true);
     }
 
     IEnumerator RandomChat() {
