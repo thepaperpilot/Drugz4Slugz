@@ -115,6 +115,7 @@ public class TriggerManager : MonoBehaviour {
         Dictionary<string, Trigger> triggersDict = new Dictionary<string, Trigger>();
         triggersDict.Add("Filler/First", new Trigger { type = Trigger.Type.FIRST, adviceRating = 1 });
         triggersDict.Add("Filler/Random", new Trigger { type = Trigger.Type.RANDOM });
+        triggersDict.Add("Events/Salt", new DrugTrigger("Salt"));
         triggersDict.Add("Events/Pepper", new DrugTrigger("Pepper"));
         triggersDict.Add("Events/Cute Sneeze", new CuteSneezeTrigger());
         return triggersDict;
