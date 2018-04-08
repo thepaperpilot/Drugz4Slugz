@@ -55,6 +55,7 @@ public class DayManager : MonoBehaviour {
     public void EndDay() {
         CommentChainManager.instance.StopAllCoroutines();
         fade.SetFloat("Speed", 1);
+        fade.Play("Fade", 0, 0);
         Delay(2, NewDay);
     }
 
