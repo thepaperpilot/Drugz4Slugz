@@ -23,8 +23,11 @@ public class DrugManager : MonoBehaviour {
     }
 
     public void Drop(GameObject enclosure) {
-        if (selected != null) {
-            enclosure.GetComponentInChildren<Slug>().ApplyDrug(selected);
+        Slug slug = enclosure.GetComponentInChildren<Slug>();
+        if (slug == null) {
+            SlugManager.instance.Spawn(enclosure);
+        } else if (selected != null) {
+            slug.ApplyDrug(selected);
 
             //Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
             //selected = null;
