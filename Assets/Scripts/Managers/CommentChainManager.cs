@@ -42,6 +42,10 @@ public class CommentChainManager : MonoBehaviour {
             CreateComment(chat.transform, chain, comment);
             yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame();
+            // Force layout rebuild
+            VerticalLayoutGroup layout = scrollRect.GetComponent<VerticalLayoutGroup>();
+            layout.enabled = false;
+            layout.enabled = true;
             scrollRect.verticalNormalizedPosition = 0;
         }
     }

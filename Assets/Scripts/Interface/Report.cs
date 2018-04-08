@@ -22,7 +22,14 @@ public class Report : MonoBehaviour {
 
         foreach (CommentChain commentChain in CommentChainManager.comments.OrderBy(c => c.adviceRating).Take(3)) {
             CommentChain.Comment comment = commentChain.comments.OrderBy(c => Random.value).FirstOrDefault();
-            CommentChainManager.CreateComment(comments, commentChain, comment).GetComponentInChildren<TextMeshProUGUI>().fontSize *= 1.5f;
+            CommentChainManager.CreateComment(comments, commentChain, comment).GetComponentInChildren<TextMeshProUGUI>().fontSize = 16;
         }
+
+        DayManager.Delay(0, delegate {
+            // Force layout rebuild
+            VerticalLayoutGroup layout = comments.GetComponent<VerticalLayoutGroup>();
+            layout.enabled = false;
+            layout.enabled = true;
+        });
     }
 }
