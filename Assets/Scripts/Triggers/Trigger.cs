@@ -1,19 +1,17 @@
-﻿using System;
-using UnityEngine;
-
-public class Trigger {
+﻿public class Trigger {
 
     public enum Type {
         FIRST,
         RANDOM,
-        EVENT
+        EVENT,
+        OVERDOSE,
+        OVERNIGHT
     }
 
     public Type type;
-    public int adviceRating;
 
-    // For use in Type.EVENT triggers
+    // For use in Type.EVENT and Type.OVERDOSE triggers
     public virtual bool CheckValid(Slug slug, Drug.DrugState state) {
-        return false;
+        return true;
     }
 }

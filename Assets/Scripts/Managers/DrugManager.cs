@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class DrugManager : MonoBehaviour {
@@ -32,5 +32,12 @@ public class DrugManager : MonoBehaviour {
             //Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
             //selected = null;
         }
+    }
+
+    public static IEnumerable<string> GetDrugs() {
+        return typeof(Drug)
+            .Assembly.GetTypes()
+            .Where(t => t.IsSubclassOf(typeof(Drug)) && !t.IsAbstract)
+            .Select(t => t.Name);
     }
 }

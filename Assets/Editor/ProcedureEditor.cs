@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
@@ -56,7 +54,7 @@ public class ProcedureEditor : Editor {
     void CreateDrugsMenu() {
         // Create our triggers menu
         drugsMenu = new GenericMenu();
-        foreach (string drug in GetDrugs())
+        foreach (string drug in DrugManager.GetDrugs())
             drugsMenu.AddItem(new GUIContent(drug), false, clickHandler, drug);
     }
 
@@ -91,12 +89,5 @@ public class ProcedureEditor : Editor {
     void clickHandler(object target) {
         serializedObject.FindProperty(prop).GetArrayElementAtIndex(index).FindPropertyRelative("drug").stringValue = (string)target;
         serializedObject.ApplyModifiedProperties();
-    }
-
-    IEnumerable<string> GetDrugs() {
-        return typeof(Drug)
-            .Assembly.GetTypes()
-            .Where(t => t.IsSubclassOf(typeof(Drug)) && !t.IsAbstract)
-            .Select(t => t.Name);
     }
 }

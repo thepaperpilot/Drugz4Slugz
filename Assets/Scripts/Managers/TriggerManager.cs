@@ -32,6 +32,14 @@ public class TriggerManager : MonoBehaviour {
             .OrderBy(t => Random.value)
             .FirstOrDefault());
 
+        // Play overnight changes comment changes
+        foreach (Drug.DrugState drug in DayManager.slugs.SelectMany(s => s.drugs).OrderBy(r => Random.value)) {
+            ReadRandomChain(triggers
+                .Where(t => t.type == Trigger.Type.OVERNIGHT && t.CheckValid(drug.slug, drug))
+                .OrderBy(t => Random.value)
+                .FirstOrDefault());
+        }
+
         // Start rest of broadcast
         StartCoroutine(ActivateDrugs());
         StartCoroutine(RandomChat());
@@ -45,10 +53,12 @@ public class TriggerManager : MonoBehaviour {
             drug.drug.Play(drug);
 
             // Chat's response
-            ReadRandomChain(triggers
-                .Where(t => t.type == Trigger.Type.EVENT && t.CheckValid(drug.slug, drug))
-                .OrderBy(t => Random.value)
-                .FirstOrDefault());
+            IEnumerable<Trigger> filteredTriggers = triggers
+                .Where(t => t.type == Trigger.Type.EVENT && t.CheckValid(drug.slug, drug));
+            if (drug.strength - drug.resistance > drug.drug.maxDosage)
+                filteredTriggers = filteredTriggers.Union(triggers
+                    .Where(t => t.type == Trigger.Type.OVERDOSE && t.CheckValid(drug.slug, drug)));
+            ReadRandomChain(filteredTriggers.OrderBy(t => Random.value).FirstOrDefault());
 
             // Wait before doing next drug activation
             yield return new WaitForSeconds(drugActivationDelay);
@@ -83,11 +93,17 @@ public class TriggerManager : MonoBehaviour {
     public static Dictionary<string, Trigger> CreateTriggersDict() {
         // Create our triggers menu
         Dictionary<string, Trigger> triggersDict = new Dictionary<string, Trigger>();
-        triggersDict.Add("Filler/First", new Trigger { type = Trigger.Type.FIRST, adviceRating = 1 });
+        triggersDict.Add("Filler/First", new Trigger { type = Trigger.Type.FIRST });
         triggersDict.Add("Filler/Random", new Trigger { type = Trigger.Type.RANDOM });
-        triggersDict.Add("Events/Salt", new DrugTrigger("Salt"));
-        triggersDict.Add("Events/Pepper", new DrugTrigger("Pepper"));
-        triggersDict.Add("Events/Cute Sneeze", new CuteSneezeTrigger());
+        triggersDict.Add("Events/Special/Cute Sneeze", new CuteSneezeTrigger());
+        triggersDict.Add("Events/Overdose/Any", new Trigger { type = Trigger.Type.OVERDOSE });
+        foreach (string drug in DrugManager.GetDrugs()) {
+            triggersDict.Add("Events/Low Dose/" + drug, new DrugTrigger(drug));
+            triggersDict.Add("Events/Medium Dose/" + drug, new DrugTrigger(drug, 5));
+            triggersDict.Add("Events/High Dose/" + drug, new DrugTrigger(drug, 10));
+            triggersDict.Add("Events/Overnight Change/" + drug, new OvernightChangeTrigger(drug));
+            triggersDict.Add("Events/Overdose/" + drug, new OverdoseTrigger(drug));
+        }
         return triggersDict;
     }
 }

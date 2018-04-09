@@ -8,6 +8,7 @@ public abstract class Drug : MonoBehaviour {
     public class DrugState {
         public int strength = 0;
         public int resistance = 0;
+        public bool overnightChange = false;
         public Drug drug;
         public Slug slug;
     }
