@@ -20,9 +20,19 @@ public class DayManager : MonoBehaviour {
     private Transform slugEnclosures;
     public Button liveButton;
     public Button endDayButton;
+    [SerializeField]
+    private Procedure[] procedures;
+
+    private int day = 0;
 
     void Awake() {
         instance = this;
+    }
+
+    void Start() {
+        if (day < procedures.Length)
+            DeskManager.instance.procedures.Generate(procedures[day++]);
+        else DeskManager.instance.procedures.gameObject.SetActive(false);
     }
 
     public void NewDay() {
@@ -47,6 +57,9 @@ public class DayManager : MonoBehaviour {
         endDayButton.gameObject.SetActive(false);
         endDayButton.GetComponentInParent<Canvas>().GetComponent<CanvasAnimator>().Reset();
         DeskManager.instance.report.Generate();
+        if (day < procedures.Length)
+            DeskManager.instance.procedures.Generate(procedures[day++]);
+        else DeskManager.instance.procedures.gameObject.SetActive(false);
         CommentChainManager.Reset();
         if (excitement > 0)
             excitement -= 1;

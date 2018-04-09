@@ -5,6 +5,7 @@ public class DeskManager : MonoBehaviour {
     public static DeskManager instance;
 
     public Report report;
+    public Procedures procedures;
     public GameObject blackout;
 
     [Header("Rect Transform")]

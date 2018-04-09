@@ -55,8 +55,7 @@ public class TriggerManager : MonoBehaviour {
         }
         if (drugs.Count() < 2)
             yield return new WaitForSeconds(drugActivationDelay * (2 - drugs.Count()));
-
-        Debug.Log("Finished broadcast");
+        
         StopAllCoroutines();
         DayManager.instance.endDayButton.gameObject.SetActive(true);
     }
