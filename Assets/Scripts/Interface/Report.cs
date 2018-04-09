@@ -10,8 +10,18 @@ public class Report : MonoBehaviour {
     public TextMeshProUGUI advice;
     public Transform comments;
 
+    public Sprite downwardGraph;
+    public Sprite neutralGraph;
+    public Sprite upwardGraph;
+
+    private int lastExcitement = 0;
+
     public void Generate() {
         gameObject.SetActive(true);
+
+        int diff = DayManager.instance.excitement - lastExcitement;
+        graph.sprite = diff > 0 ? upwardGraph : diff < 0 ? downwardGraph : neutralGraph;
+        lastExcitement = DayManager.instance.excitement;
         
         views.text = Mathf.RoundToInt(
                 Random.value * Mathf.Pow(10, 1 + 2 * Mathf.Log(Mathf.Max(1, DayManager.instance.excitement)))).ToString();

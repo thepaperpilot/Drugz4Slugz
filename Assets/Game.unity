@@ -1751,6 +1751,9 @@ MonoBehaviour:
   views: {fileID: 1949779591}
   advice: {fileID: 1814145605}
   comments: {fileID: 1746707617}
+  downwardGraph: {fileID: 21300000, guid: c708cca45b7551c4896ab099d8adec75, type: 3}
+  neutralGraph: {fileID: 21300000, guid: c708cca45b7551c4896ab099d8adec75, type: 3}
+  upwardGraph: {fileID: 21300000, guid: c708cca45b7551c4896ab099d8adec75, type: 3}
 --- !u!1 &861486289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2018,7 +2021,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000037693546}
+  m_AnchoredPosition: {x: 0, y: -0.000022577646}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &928672829
@@ -3041,7 +3044,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1595341609}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.9999998
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
