@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 using TMPro;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class DayManager : MonoBehaviour {
     public static DayManager instance;
 
     public static Slug[] slugs;
+    public static string note;
 
     [HideInInspector]
     public int excitement = 0;
@@ -70,5 +72,11 @@ public class DayManager : MonoBehaviour {
     public static void BeginRecording() {
         slugs = instance.slugEnclosures.GetComponentsInChildren<Slug>();
         instance.liveButton.interactable = false;
+
+        note = "Good Work!";
+        if (slugs.Length == 0) {
+            note = "Where were the slugs?";
+        } else if (slugs.Where(s => s.drugs.Count == 0).Count() == 0)
+            note = "Include a control group";
     }
 }

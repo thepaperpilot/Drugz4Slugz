@@ -15,6 +15,7 @@ public class Report : MonoBehaviour {
         
         views.text = Mathf.RoundToInt(
                 Random.value * Mathf.Pow(10, 1 + 2 * Mathf.Log(Mathf.Max(1, DayManager.instance.excitement)))).ToString();
+        advice.text = DayManager.note;
 
         foreach (Transform transform in comments)
             Destroy(transform.gameObject);
