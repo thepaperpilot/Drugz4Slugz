@@ -379,6 +379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorImage: {fileID: 2800000, guid: c708cca45b7551c4896ab099d8adec75, type: 3}
   maxDosage: 10
+  eyesSprite: {fileID: 21300000, guid: c47513be3671443488cbff5853645e95, type: 3}
+  mouthSprite: {fileID: 21300000, guid: 64ce88d82ec60b340b22c977a91827c0, type: 3}
 --- !u!114 &52797081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2889,7 +2891,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00004113299}
+  m_AnchoredPosition: {x: 0, y: 0.00003647027}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &928672829
