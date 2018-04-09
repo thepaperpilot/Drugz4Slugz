@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent(typeof(AudioReverbFilter))]
 public class Slug : MonoBehaviour {
     
     public Image body;
@@ -17,10 +18,13 @@ public class Slug : MonoBehaviour {
     [HideInInspector]
     public new AudioSource audio;
     [HideInInspector]
+    public AudioReverbFilter reverb;
+    [HideInInspector]
     public HashSet<Drug.DrugState> drugs = new HashSet<Drug.DrugState>();
 
     void Awake() {
         audio = GetComponent<AudioSource>();
+        reverb = GetComponent<AudioReverbFilter>();
     }
 
     public void Generate() {

@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114496997175890850}
   - component: {fileID: 82026529938250840}
   - component: {fileID: 114781101574836734}
+  - component: {fileID: 164658458489535496}
   m_Layer: 0
   m_Name: Slug
   m_TagString: Untagged
@@ -106,7 +107,8 @@ AudioSource:
   m_GameObject: {fileID: 1227011552287462}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: acbb2842442599440b940264b6ad4db6,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -332,6 +334,28 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!164 &164658458489535496
+AudioReverbFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227011552287462}
+  m_Enabled: 0
+  m_DryLevel: 0
+  m_Room: -1000
+  m_RoomHF: -300
+  m_DecayTime: 2.31
+  m_DecayHFRatio: 0.64
+  m_ReflectionsLevel: -711
+  m_ReverbLevel: 83
+  m_ReverbDelay: 0.017
+  m_Diffusion: 100
+  m_Density: 100
+  m_HFReference: 5000
+  m_RoomLF: 0
+  m_LFReference: 250
+  m_ReflectionsDelay: 0
+  m_ReverbPreset: 6
 --- !u!222 &222254985150614996
 CanvasRenderer:
   m_ObjectHideFlags: 1
