@@ -15,6 +15,9 @@ public class Slug : MonoBehaviour {
     public Image wings;
     public Image moustache;
     public Image shell;
+    public Image ears;
+    public Image tail;
+    public Image whiskers;
     public float minSize = .8f;
     public float maxSize = 1.2f;
 

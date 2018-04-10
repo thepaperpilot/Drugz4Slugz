@@ -31,8 +31,8 @@ public class Anime : Drug {
         if (state.originalMouth == null) {
             state.originalMouth = state.slug.mouth.sprite;
             state.slug.mouth.sprite = mouthSprite;
-            Testosterone testosterone = state.slug.drugs.Where(d => d.drug.GetType().Name == "Testosterone").FirstOrDefault().drug as Testosterone;
-            state.slug.mouth.sprite = testosterone == null ? mouthSprite : testosterone.frown;
+            DrugState testosterone = state.slug.drugs.Where(d => d.drug.GetType().Name == "Testosterone").FirstOrDefault();
+            state.slug.mouth.sprite = testosterone == null ? mouthSprite : (testosterone.drug as Testosterone).frown;
         }
     }
 
@@ -43,7 +43,6 @@ public class Anime : Drug {
         if (state.strength >= 5) {
             if (!state.slug.wings.gameObject.activeSelf)
                 state.overnightChange = true;
-            state.slug.wings.transform.localScale = Vector2.one * (1 + (state.strength - 5) / 5f);
             state.slug.wings.gameObject.SetActive(true);
         } else if (state.strength == 0) {
             state.slug.wings.gameObject.SetActive(false);
