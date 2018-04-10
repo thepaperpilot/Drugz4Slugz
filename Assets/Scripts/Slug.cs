@@ -8,12 +8,18 @@ using UnityEngine.UI;
 public class Slug : MonoBehaviour {
     
     public Image body;
+    // TODO eyes priority for drugs
     public Image eyes;
     public Image mouth;
     public Image blush;
     public Image wings;
+    public Image moustache;
+    public Image shell;
     public float minSize = .8f;
     public float maxSize = 1.2f;
+
+    public Sprite deadEyes;
+    public Sprite deadMouth;
 
     [HideInInspector]
     public new AudioSource audio;
@@ -29,7 +35,10 @@ public class Slug : MonoBehaviour {
 
     public void Generate() {
         transform.localScale = Vector3.one * Random.Range(minSize, maxSize);
-        body.color = Random.ColorHSV(0, 1, .5f, 1, 1, 1);
+        Color color = Random.ColorHSV(0, 1, .5f, 1, 1, 1);
+        foreach (Image image in GetComponentsInChildren<Image>(true))
+            image.color = color;
+        eyes.color = Color.white;
     }
 
     public void ApplyDrug(Drug drug) {

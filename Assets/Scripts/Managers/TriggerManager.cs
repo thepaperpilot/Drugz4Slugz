@@ -55,9 +55,12 @@ public class TriggerManager : MonoBehaviour {
             // Chat's response
             IEnumerable<Trigger> filteredTriggers = triggers
                 .Where(t => t.type == Trigger.Type.EVENT && t.CheckValid(drug.slug, drug));
-            if (drug.strength - drug.resistance > drug.drug.maxDosage)
+            if (drug.strength - drug.resistance > drug.drug.maxDosage) {
                 filteredTriggers = filteredTriggers.Union(triggers
                     .Where(t => t.type == Trigger.Type.OVERDOSE && t.CheckValid(drug.slug, drug)));
+                drug.slug.eyes.sprite = drug.slug.deadEyes;
+                drug.slug.mouth.sprite = drug.slug.deadMouth;
+            }
             ReadRandomChain(filteredTriggers.OrderBy(t => Random.value).FirstOrDefault());
 
             // Wait before doing next drug activation
