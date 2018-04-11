@@ -18,6 +18,8 @@ public class Slug : MonoBehaviour {
     public Image ears;
     public Image tail;
     public Image whiskers;
+    public Image salt;
+    public GameObject flowers;
     public float minSize = .8f;
     public float maxSize = 1.2f;
 
@@ -43,6 +45,7 @@ public class Slug : MonoBehaviour {
             image.color = color;
         eyes.color = Color.white;
         blush.color = Color.white;
+        salt.color = Color.white;
     }
 
     public void ApplyDrug(Drug drug) {

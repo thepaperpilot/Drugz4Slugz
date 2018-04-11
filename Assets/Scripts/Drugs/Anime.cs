@@ -36,6 +36,13 @@ public class Anime : Drug {
         }
     }
 
+    public override void Play(DrugState state) {
+        if (state.strength - state.resistance > maxDosage) {
+            state.slug.flowers.SetActive(true);
+            state.slug.flowers.transform.position = Camera.main.ScreenToWorldPoint(state.slug.transform.position + Vector3.forward * 20);
+        }
+    }
+
     public override void Overnight(DrugState drugState) {
         AnimeState state = drugState as AnimeState;
 

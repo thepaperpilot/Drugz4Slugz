@@ -8,5 +8,6 @@ public class Salt : Drug {
     public override void Play(DrugState state) {
         Color color = state.slug.body.color;
         state.slug.body.CrossFadeColor(new Color(color.r * colorMod, color.g * colorMod, color.b * colorMod), colorDuration, false, false);
+        state.slug.salt.gameObject.SetActive(true);
     }
 }
