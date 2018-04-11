@@ -42,6 +42,7 @@ public class Slug : MonoBehaviour {
         foreach (Image image in GetComponentsInChildren<Image>(true))
             image.color = color;
         eyes.color = Color.white;
+        blush.color = Color.white;
     }
 
     public void ApplyDrug(Drug drug) {

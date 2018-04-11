@@ -23,7 +23,7 @@ public class Anime : Drug {
 
         state.slug.audio.pitch *= 1.1f;
         state.slug.blush.gameObject.SetActive(true);
-        state.slug.blush.transform.localScale = Vector2.one * (1 + state.strength / 10f);
+        state.slug.blush.transform.localScale = new Vector2(1 + state.strength / 100f, 1 + state.strength / 10f);
         if (state.originalEyes == null) {
             state.originalEyes = state.slug.eyes.sprite;
             state.slug.eyes.sprite = eyesSprite;
@@ -51,6 +51,6 @@ public class Anime : Drug {
             state.slug.mouth.sprite = state.originalMouth;
         }
         state.slug.audio.pitch = Mathf.Pow(1.1f, state.strength);
-        state.slug.blush.transform.localScale = Vector2.one * (1 + state.strength / 10f);
+        state.slug.blush.transform.localScale = new Vector2(1 + state.strength / 100f, 1 + state.strength / 10f);
     }
 }
