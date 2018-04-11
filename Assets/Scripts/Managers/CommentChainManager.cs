@@ -50,8 +50,8 @@ public class CommentChainManager : MonoBehaviour {
         }
     }
 
-    public static GameObject CreateComment(Transform parent, CommentChain chain, CommentChain.Comment comment) {
-        GameObject commentObject = Instantiate(instance.messagePrefab, parent);
+    public static GameObject CreateComment(Transform parent, CommentChain chain, CommentChain.Comment comment, GameObject prefab = null) {
+        GameObject commentObject = Instantiate(prefab ?? instance.messagePrefab, parent);
         TextMeshProUGUI text = commentObject.GetComponentInChildren<TextMeshProUGUI>();
         text.text = "<b>" + chain.GetName(comment.commenterNumber) + "</b>: " + comment.comment;
         return commentObject;

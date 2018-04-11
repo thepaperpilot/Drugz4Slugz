@@ -9,6 +9,7 @@ public class Report : MonoBehaviour {
     public TextMeshProUGUI views;
     public TextMeshProUGUI advice;
     public Transform comments;
+    public GameObject messagePrefab;
 
     public Sprite downwardGraph;
     public Sprite neutralGraph;
@@ -32,7 +33,7 @@ public class Report : MonoBehaviour {
 
         foreach (CommentChain commentChain in CommentChainManager.comments.OrderBy(c => c.adviceRating).Take(3)) {
             CommentChain.Comment comment = commentChain.comments.OrderBy(c => Random.value).FirstOrDefault();
-            CommentChainManager.CreateComment(comments, commentChain, comment).GetComponentInChildren<TextMeshProUGUI>().fontSize = 16;
+            CommentChainManager.CreateComment(comments, commentChain, comment, messagePrefab).GetComponentInChildren<TextMeshProUGUI>().fontSize = 16;
         }
 
         DayManager.Delay(0, delegate {
