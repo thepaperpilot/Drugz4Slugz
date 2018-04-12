@@ -16,6 +16,7 @@ public class DeskManager : MonoBehaviour {
     public Vector2 localScale;
 
     private RectTransform open;
+    private Transform parent;
     private Vector2 savedAnchorMax;
     private Vector2 savedAnchorMin;
     private Vector2 savedAnchoredPosition;
@@ -42,6 +43,7 @@ public class DeskManager : MonoBehaviour {
         savedSizeDelta = rect.sizeDelta;
         savedLocalScale = rect.localScale;
         open = rect;
+        parent = rect.parent;
 
         // Apply inspector values
         rect.anchorMax = anchorMax;
@@ -49,6 +51,7 @@ public class DeskManager : MonoBehaviour {
         rect.anchoredPosition = anchoredPosition;
         rect.sizeDelta = sizeDelta;
         rect.localScale = localScale;
+        rect.SetParent(blackout.transform);
 
         blackout.SetActive(true);
     }
@@ -59,8 +62,10 @@ public class DeskManager : MonoBehaviour {
         open.anchoredPosition = savedAnchoredPosition;
         open.sizeDelta = savedSizeDelta;
         open.localScale = savedLocalScale;
+        open.SetParent(parent);
 
         open = null;
+        parent = null;
         blackout.SetActive(false);
     }
 }
