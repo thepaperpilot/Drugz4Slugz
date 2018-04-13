@@ -15,9 +15,9 @@ MonoBehaviour:
   comments:
   - commenterNumber: 0
     delay: 0
-    comment: "\rit's like the sixth sense up in this shit"
+    comment: it's like the sixth sense up in this shit
   - commenterNumber: 1
     delay: 1
-    comment: "\rtoo entertaining, should be illegal"
+    comment: too entertaining, should be illegal
   excitementDelta: 2
   adviceRating: 0

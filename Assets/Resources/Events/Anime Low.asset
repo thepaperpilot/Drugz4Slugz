@@ -15,9 +15,9 @@ MonoBehaviour:
   comments:
   - commenterNumber: 4
     delay: 1
-    comment: "\rItadakimasu~!"
+    comment: Itadakimasu~!
   - commenterNumber: 1
     delay: 1
-    comment: "\r:DDDD"
+    comment: :DDDD
   excitementDelta: 1
   adviceRating: 1

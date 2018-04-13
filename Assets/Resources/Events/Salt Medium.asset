@@ -15,7 +15,7 @@ MonoBehaviour:
   comments:
   - commenterNumber: 0
     delay: 1
-    comment: "\rimagine how awful that would feel"
+    comment: imagine how awful that would feel <sprite=0><sprite=0><sprite=0>
   - commenterNumber: 1
     delay: 3
     comment: to have yyour skin slowly melt off?,  yeah, bit of a bummer

@@ -37,7 +37,7 @@ MonoBehaviour:
     comment: STAHP
   - commenterNumber: 1
     delay: 0.2
-    comment: "\rSenpai, no!\r"
+    comment: "Senpai, no!\r"
   - commenterNumber: 3
     delay: 0.7
     comment: senpai yes

@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
-  m_Name: dnd
+  m_Name: lost
   m_EditorClassIdentifier: 
   trigger: Filler/Random
   comments:
   - commenterNumber: 7
-    delay: 2
-    comment: /roll Con Saving Throw
-  excitementDelta: 1
+    delay: 0
+    comment: is this a lost reerun?
+  excitementDelta: 0
   adviceRating: 0

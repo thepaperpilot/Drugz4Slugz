@@ -15,6 +15,6 @@ MonoBehaviour:
   comments:
   - commenterNumber: 7
     delay: 3
-    comment: "\rThere's a sheep thief on the leaf!"
+    comment: There's a sheep thief on the leaf!
   excitementDelta: 2
   adviceRating: 0
