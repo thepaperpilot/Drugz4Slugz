@@ -16,5 +16,5 @@ MonoBehaviour:
   - commenterNumber: 8
     delay: 3
     comment: "\rwho'd watch thsi shit?"
-  excitementDelta: -5
+  excitementDelta: 0
   adviceRating: 0

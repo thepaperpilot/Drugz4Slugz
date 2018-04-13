@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: Filler/Random
   comments:
-  - commenterNumber: 4
+  - commenterNumber: 8
     delay: 3
     comment: Zzz
-  excitementDelta: -3
+  excitementDelta: 0
   adviceRating: 0

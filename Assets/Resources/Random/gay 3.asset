@@ -9,11 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
-  m_Name: wtf
+  m_Name: gay 3
   m_EditorClassIdentifier: 
-  trigger: Filler/Random
+  trigger: Events/Overnight Change/Katfeine
   comments:
-  - commenterNumber: 0
+  - commenterNumber: 9
     delay: 0
-    comment: what the fuck does wtf mean
+    comment: THEY'RE TURNING THE SLUGS GAAY
   excitementDelta: 0
+  adviceRating: 0

@@ -49,19 +49,21 @@ public class TriggerManager : MonoBehaviour {
         yield return new WaitForSeconds(drugActivationDelay);
         IEnumerable<Drug.DrugState> drugs = DayManager.slugs.SelectMany(s => s.drugs);
         foreach (Drug.DrugState drug in drugs.OrderBy(r => Random.value)) {
-            // Activate drug
-            drug.drug.Play(drug);
+            if (drug.slug.eyes.sprite != drug.slug.deadEyes) {
+                // Activate drug
+                drug.drug.Play(drug);
 
-            // Chat's response
-            IEnumerable<Trigger> filteredTriggers = triggers
-                .Where(t => t.type == Trigger.Type.EVENT && t.CheckValid(drug.slug, drug));
-            if (drug.strength - drug.resistance > drug.drug.maxDosage) {
-                filteredTriggers = filteredTriggers.Union(triggers
-                    .Where(t => t.type == Trigger.Type.OVERDOSE && t.CheckValid(drug.slug, drug)));
-                drug.slug.eyes.sprite = drug.slug.deadEyes;
-                drug.slug.mouth.sprite = drug.slug.deadMouth;
+                // Chat's response
+                IEnumerable<Trigger> filteredTriggers = triggers
+                    .Where(t => t.type == Trigger.Type.EVENT && t.CheckValid(drug.slug, drug));
+                if (drug.strength - drug.resistance > drug.drug.maxDosage) {
+                    filteredTriggers = filteredTriggers.Union(triggers
+                        .Where(t => t.type == Trigger.Type.OVERDOSE && t.CheckValid(drug.slug, drug)));
+                    drug.slug.eyes.sprite = drug.slug.deadEyes;
+                    drug.slug.mouth.sprite = drug.slug.deadMouth;
+                }
+                ReadRandomChain(filteredTriggers.OrderBy(t => Random.value).FirstOrDefault());
             }
-            ReadRandomChain(filteredTriggers.OrderBy(t => Random.value).FirstOrDefault());
 
             // Wait before doing next drug activation
             yield return new WaitForSeconds(drugActivationDelay);
