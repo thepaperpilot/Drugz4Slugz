@@ -39,7 +39,7 @@ public class DayManager : MonoBehaviour {
         slugs = slugEnclosures.GetComponentsInChildren<Slug>();
         foreach (Slug slug in slugs)
             slug.Sleep();
-        foreach (Transform enclosure in slugEnclosures.GetComponentsInChildren<Slug>().Select(s => s.transform.parent)) {
+        foreach (Transform enclosure in slugEnclosures.GetComponentsInChildren<Button>().Select(s => s.transform)) {
             if (enclosure.childCount > 3) {
                 if (enclosure.GetChild(2).gameObject.activeSelf) {
                     enclosure.GetChild(2).gameObject.SetActive(false);
