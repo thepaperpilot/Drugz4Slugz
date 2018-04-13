@@ -27,12 +27,12 @@ MonoBehaviour:
     comment: Is it dead?!
   - commenterNumber: 3
     delay: 0.1
-    comment: calld it!
+    comment: calld it! <sprite=1><sprite=1><sprite=1>
   - commenterNumber: 4
     delay: 0.05
     comment: This is awesome!
   - commenterNumber: 5
     delay: 0.1
-    comment: Tax payer dollars are work lmao
+    comment: Tax payer dollars are work lmao <sprite=1>
   excitementDelta: 3
   adviceRating: 0

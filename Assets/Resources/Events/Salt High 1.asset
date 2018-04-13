@@ -15,13 +15,13 @@ MonoBehaviour:
   comments:
   - commenterNumber: 0
     delay: 1
-    comment: "\rThis isn't what I signed up for."
+    comment: This isn't what I signed up for.
   - commenterNumber: 4
     delay: 0.4
     comment: i never asked for this
   - commenterNumber: 0
     delay: 1
-    comment: 'D4S: teh deal has chaneg. pray i do not alter it againn'
+    comment: 'D4S: the deal has chaneg. pray i do not alter it againn'
   - commenterNumber: 1
     delay: 1
     comment: i did this when I was growing up
@@ -30,7 +30,7 @@ MonoBehaviour:
     comment: that's horrible!
   - commenterNumber: 1
     delay: 1
-    comment: yea man
+    comment: yea man <sprite=0>
   - commenterNumber: 2
     delay: 1
     comment: WTF don't be so cool with that

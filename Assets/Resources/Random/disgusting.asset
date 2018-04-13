@@ -15,6 +15,6 @@ MonoBehaviour:
   comments:
   - commenterNumber: 4
     delay: 3
-    comment: "\rSlugs only want one thing and it's fucking disgusting. "
+    comment: 'Slugs only want one thing and it''s fucking disgusting. '
   excitementDelta: 2
   adviceRating: 0

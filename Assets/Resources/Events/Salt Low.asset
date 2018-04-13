@@ -15,7 +15,7 @@ MonoBehaviour:
   comments:
   - commenterNumber: 0
     delay: 1
-    comment: Woah
+    comment: Woah <sprite=0>
   - commenterNumber: 1
     delay: 1
     comment: is this ethical?

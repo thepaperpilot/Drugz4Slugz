@@ -15,7 +15,7 @@ MonoBehaviour:
   comments:
   - commenterNumber: 4
     delay: 1
-    comment: "\rdude, maybe I should try drugs"
+    comment: dude, maybe I should try drugs
   - commenterNumber: 2
     delay: 1
     comment: that's what I was waiting for

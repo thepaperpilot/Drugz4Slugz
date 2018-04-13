@@ -15,7 +15,7 @@ MonoBehaviour:
   comments:
   - commenterNumber: 6
     delay: 1
-    comment: "\rwtf why is this on the front of twitch?"
+    comment: wtf why is this on the front of twitch?
   - commenterNumber: 2
     delay: 1
     comment: because

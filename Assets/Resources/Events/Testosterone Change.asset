@@ -18,7 +18,7 @@ MonoBehaviour:
     comment: uh oh
   - commenterNumber: 1
     delay: 1
-    comment: "\r$20 says it eats them all"
+    comment: $20 says it eats them all
   - commenterNumber: 2
     delay: 1
     comment: i give it a week

@@ -15,9 +15,9 @@ MonoBehaviour:
   comments:
   - commenterNumber: 2
     delay: 0
-    comment: "\r<(-w-<) Slug-sama!"
+    comment: <(-w-<) Slug-sama!
   - commenterNumber: 1
     delay: 1
-    comment: lmao
+    comment: <sprite=0> lmao
   excitementDelta: 2
   adviceRating: 0
