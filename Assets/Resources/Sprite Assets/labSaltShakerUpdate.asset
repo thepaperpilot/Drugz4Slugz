@@ -12,28 +12,40 @@ MonoBehaviour:
   m_Name: labSaltShakerUpdate
   m_EditorClassIdentifier: 
   hashCode: -2049880174
-  material: {fileID: 21576292662608816}
+  material: {fileID: 21121921852461474}
   materialHashCode: 0
   spriteSheet: {fileID: 2800000, guid: 93163efdcf48c894584933d5a14a0ba8, type: 3}
   spriteInfoList:
   - id: 0
     x: 0
     y: 0
-    width: 209.9
+    width: 366
     height: 366
-    xOffset: 0.4
-    yOffset: 314.1
-    xAdvance: 173
-    scale: 1.2
-    name: labSaltShakerUpdate
-    hashCode: -2049880174
+    xOffset: -183
+    yOffset: 183
+    xAdvance: 366
+    scale: 1
+    name: labSaltShakerUpdate_0
+    hashCode: 1063482141
     unicode: 0
-    pivot: {x: -86.5, y: 183}
+    pivot: {x: -183, y: 183}
     sprite: {fileID: 21300000, guid: 93163efdcf48c894584933d5a14a0ba8, type: 3}
-  fallbackSpriteAssets:
-  - {fileID: 11400000, guid: 9314cb1bf3c7fe44197585ea01bcba8d, type: 2}
-  - {fileID: 11400000, guid: 9a952e2781ef26940ae089f1053ef4ef, type: 2}
---- !u!21 &21576292662608816
+  - id: 1
+    x: 366
+    y: 0
+    width: 366
+    height: 366
+    xOffset: -183
+    yOffset: 183
+    xAdvance: 366
+    scale: 1
+    name: labSaltShakerUpdate_1
+    hashCode: 1063482140
+    unicode: 0
+    pivot: {x: -183, y: 183}
+    sprite: {fileID: 21300002, guid: 93163efdcf48c894584933d5a14a0ba8, type: 3}
+  fallbackSpriteAssets: []
+--- !u!21 &21121921852461474
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 1
