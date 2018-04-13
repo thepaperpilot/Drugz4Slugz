@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
+  m_Name: Testosterone Overdose
+  m_EditorClassIdentifier: 
+  trigger: Events/Overdose/Testosterone
+  comments:
+  - commenterNumber: 0
+    delay: 0.3
+    comment: rip!!!!
+  - commenterNumber: 1
+    delay: 0.1
+    comment: oh my gawd <sprite=1><sprite=0><sprite=1>
+  - commenterNumber: 2
+    delay: 0.2
+    comment: oh how the mighty have fallen
+  - commenterNumber: 3
+    delay: 0.1
+    comment: its not fair!!
+  - commenterNumber: 5
+    delay: 0.3
+    comment: he fights in valhalla now
+  excitementDelta: 3
+  adviceRating: 0
