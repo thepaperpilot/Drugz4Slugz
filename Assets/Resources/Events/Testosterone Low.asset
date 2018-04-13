@@ -9,12 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
-  m_Name: Kawaii
+  m_Name: Testosterone Low
   m_EditorClassIdentifier: 
-  trigger: Events/Special/Cute Sneeze
+  trigger: Events/Low Dose/Testosterone
   comments:
-  - commenterNumber: 0
-    delay: 1
-    comment: Kawaii :3
-  excitementDelta: 1
-  adviceRating: 1
+  - commenterNumber: 8
+    delay: 0
+    comment: I hear they salt the slugs they don't like
+  - commenterNumber: 2
+    delay: 4
+    comment: wait rly?
+  excitementDelta: 0
+  adviceRating: 0

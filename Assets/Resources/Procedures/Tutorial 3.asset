@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6dce17a1235274db851bde428ac94a, type: 3}
+  m_Name: Tutorial 3
+  m_EditorClassIdentifier: 
+  description: "While it's not my place to question your workplace decor, some of
+    our viewers have noticed and responded positively to your animu thing on the shelf.\n\n
+    \   I don't quite get it, but we don't have any drug tests planned for today,
+    so instead of sitting around, why not run a stream with the slugs and that stuff?\n\n
+    \   It's a work day and a weird hour, I doubt the reception will be all that positive,
+    but everything is worth a try when it comes to science!"
+  firstSlug:
+  - drug: Anime
+    dosage: 2
+  secondSlug: []
+  thirdSlug: []
+  fourthSlug: []

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
+  m_Name: Anime High
+  m_EditorClassIdentifier: 
+  trigger: Events/High Dose/Anime
+  comments:
+  - commenterNumber: 4
+    delay: 1
+    comment: "B-baka! (\uFF61>\uFE4F<\uFF61)"
+  - commenterNumber: 2
+    delay: 3
+    comment: Oh boy, here it comes
+  - commenterNumber: 6
+    delay: 1
+    comment: "\u0669(\u2661\u03B5\u2661 )\u06F6 notice me senpai! \u0669(\u2661\u03B5\u2661
+      )\u06F6"
+  - commenterNumber: 1
+    delay: 1
+    comment: Slug Ball Z
+  - commenterNumber: 0
+    delay: 0.1
+    comment: SENPAII
+  - commenterNumber: 0
+    delay: 0.4
+    comment: ugu
+  - commenterNumber: 2
+    delay: 1
+    comment: STAHP
+  - commenterNumber: 1
+    delay: 0.2
+    comment: "\rSenpai, no!\r"
+  - commenterNumber: 3
+    delay: 0.7
+    comment: senpai yes
+  - commenterNumber: 3
+    delay: 2
+    comment: "Well, if you can't beat em! \xAF\\_(\u30C4)_/\xAF"
+  - commenterNumber: 3
+    delay: 1
+    comment: (kawaiiiiii)
+  - commenterNumber: 2
+    delay: 1
+    comment: noooooooo
+  - commenterNumber: 3
+    delay: 0.2
+    comment: KAWAAAIIIIII
+  excitementDelta: 5
+  adviceRating: 1

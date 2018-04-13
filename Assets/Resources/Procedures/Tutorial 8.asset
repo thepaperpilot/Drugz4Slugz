@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6dce17a1235274db851bde428ac94a, type: 3}
+  m_Name: Tutorial 8
+  m_EditorClassIdentifier: 
+  description: "Last stream was interesting, but let's push it further.  Give 10 dosages
+    of Testosterone to a slug today and see what happens.  \n\n    And while I'm sure
+    it'll be fine, it might be safest to do this test on your least-favorite slug.\n\n
+    \   Good luck!"
+  firstSlug:
+  - drug: Testosterone
+    dosage: 10
+  secondSlug: []
+  thirdSlug: []
+  fourthSlug: []

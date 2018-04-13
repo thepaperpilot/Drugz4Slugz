@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
+  m_Name: suggestions
+  m_EditorClassIdentifier: 
+  trigger: Filler/First
+  comments:
+  - commenterNumber: 0
+    delay: 0
+    comment: "I hope they use the green drgu today\r"
+  - commenterNumber: 2
+    delay: 0.5
+    comment: "Dude, the plurple drank is my fave\r"
+  - commenterNumber: 4
+    delay: 0.7
+    comment: HANDS DOWN the best drug is the red 1
+  - commenterNumber: 3
+    delay: 1
+    comment: where is the drug list?
+  - commenterNumber: 1
+    delay: 0.4
+    comment: PURPLE DRANKD RUG NEXT
+  - commenterNumber: 5
+    delay: 1.6
+    comment: '...'
+  - commenterNumber: 3
+    delay: 0.3
+    comment: y'all are just making this up aren't y'all?
+  - commenterNumber: 7
+    delay: 1
+    comment: nah that mary jane be so fly
+  excitementDelta: 2
+  adviceRating: 0

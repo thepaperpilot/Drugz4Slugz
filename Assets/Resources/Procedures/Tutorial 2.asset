@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6dce17a1235274db851bde428ac94a, type: 3}
+  m_Name: Tutorial 2
+  m_EditorClassIdentifier: 
+  description: "Not bad yesterday, but I think we can do more.  \n\n    For this stream,
+    try mixing some different drugs together and see what happens.  I'd leave you
+    alone to try it out, but management asks that you at least test the following
+    combination.\n\n    Oh yeah, and if anything goes wrong, we'll just cut the stream.
+    \ Don't worry about it!"
+  firstSlug:
+  - drug: Katfeine
+    dosage: 2
+  - drug: Testosterone
+    dosage: 1
+  secondSlug:
+  - drug: Katfeine
+    dosage: 1
+  - drug: Testosterone
+    dosage: 2
+  thirdSlug: []
+  fourthSlug: []

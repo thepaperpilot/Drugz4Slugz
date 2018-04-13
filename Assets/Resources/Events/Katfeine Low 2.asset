@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
+  m_Name: Katfeine Low 2
+  m_EditorClassIdentifier: 
+  trigger: Events/Low Dose/Anime
+  comments:
+  - commenterNumber: 0
+    delay: 1
+    comment: "\rbetter than twilight"
+  - commenterNumber: 3
+    delay: 1
+    comment: gold
+  excitementDelta: 0
+  adviceRating: 1

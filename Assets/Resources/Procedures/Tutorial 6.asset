@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6dce17a1235274db851bde428ac94a, type: 3}
+  m_Name: Tutorial 6
+  m_EditorClassIdentifier: 
+  description: "Good morning!  I've got some good news and some bad news.\n\n    Good
+    news, the inime stuff we've been testing has been cleared by the higher-ups for
+    continued testing.\n\n    Bad news, we need to do an overdose limit test on the
+    slugs for Katfeine.  Those slugs get antsy when they have that stuff, so be careful
+    and write your notes clearly."
+  firstSlug:
+  - drug: Katfeine
+    dosage: 0
+  secondSlug:
+  - drug: Katfeine
+    dosage: 2
+  thirdSlug:
+  - drug: Katfeine
+    dosage: 4
+  fourthSlug:
+  - drug: Katfeine
+    dosage: 6

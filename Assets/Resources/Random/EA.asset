@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
+  m_Name: EA
+  m_EditorClassIdentifier: 
+  trigger: Filler/Random
+  comments:
+  - commenterNumber: 1
+    delay: 0
+    comment: "\rcan't wait until ea ruins streaming too"
+  - commenterNumber: 0
+    delay: 5
+    comment: Why does everyone hate on EA, Battlefront was sweet
+  - commenterNumber: 4
+    delay: 4
+    comment: get out
+  - commenterNumber: 1
+    delay: 0.2
+    comment: fuk u
+  - commenterNumber: 3
+    delay: 0.1
+    comment: EA FAN BOI
+  - commenterNumber: 8
+    delay: 0.7
+    comment: lol
+  - commenterNumber: 5
+    delay: 0.2
+    comment: YOUR TRIAL HAS RUN OUT, PAY $39.99 NOW TO KEEP WATCHING ($-$<)
+  - commenterNumber: 6
+    delay: 1
+    comment: get the FFUCK outta here!
+  - commenterNumber: 5
+    delay: 0.1
+    comment: i think he's trolling
+  - commenterNumber: 9
+    delay: 1
+    comment: "\rD O E S  N O T  C O M P U T E"
+  - commenterNumber: 9
+    delay: 1
+    comment: "\rD O E S  N O T  C O M P U T E"
+  - commenterNumber: 9
+    delay: 1
+    comment: "\rD O E S  N O T  C O M P U T E"
+  - commenterNumber: 1
+    delay: 0.7
+    comment: dude shut up the joke's over
+  - commenterNumber: 9
+    delay: 0.3
+    comment: "\rD O E S  N O T  C O M P U T E"
+  - commenterNumber: 9
+    delay: 0.5
+    comment: k
+  excitementDelta: 0
+  adviceRating: 0
