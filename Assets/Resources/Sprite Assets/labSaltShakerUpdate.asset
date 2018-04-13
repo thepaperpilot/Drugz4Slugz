@@ -21,8 +21,8 @@ MonoBehaviour:
     y: 0
     width: 366
     height: 366
-    xOffset: -183
-    yOffset: 183
+    xOffset: 0.4
+    yOffset: 314.1
     xAdvance: 366
     scale: 1
     name: labSaltShakerUpdate_0
@@ -35,8 +35,8 @@ MonoBehaviour:
     y: 0
     width: 366
     height: 366
-    xOffset: -183
-    yOffset: 183
+    xOffset: -19
+    yOffset: 277.5
     xAdvance: 366
     scale: 1
     name: labSaltShakerUpdate_1
@@ -44,7 +44,8 @@ MonoBehaviour:
     unicode: 0
     pivot: {x: -183, y: 183}
     sprite: {fileID: 21300002, guid: 93163efdcf48c894584933d5a14a0ba8, type: 3}
-  fallbackSpriteAssets: []
+  fallbackSpriteAssets:
+  - {fileID: 11400000, guid: 9a952e2781ef26940ae089f1053ef4ef, type: 2}
 --- !u!21 &21121921852461474
 Material:
   serializedVersion: 6
