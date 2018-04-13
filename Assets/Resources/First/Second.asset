@@ -26,3 +26,4 @@ MonoBehaviour:
     delay: 2
     comment: First
   excitementDelta: 0
+  adviceRating: 0
