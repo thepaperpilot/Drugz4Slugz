@@ -3,6 +3,7 @@ using System.Collections;
 using System.Linq;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class DayManager : MonoBehaviour {
 
@@ -90,8 +91,68 @@ public class DayManager : MonoBehaviour {
         if (slugs.Length == 0)
             note = "Where were the slugs?";
         else if (slugs.Any(s => s.drugs.Where(d => d.strength - d.resistance > d.drug.maxDosage).Count() != 0))
-            note = "Do not OD the slugs"; 
+            note = "Do not OD the slugs";
         else if (slugs.Where(s => s.drugs.Count == 0).Count() == 0)
             note = "Include a control group";
+        else if (!FollowedInstructions())
+            note = "Follow the procedures!";
+    }
+
+    static bool FollowedInstructions() {
+        Procedure proc = instance.procedures[instance.day];
+        Procedure.Dose[][] conditionsLists = new Procedure.Dose[][] { proc.firstSlug, proc.secondSlug, proc.thirdSlug, proc.fourthSlug };
+        if (!conditionsLists.Any(c => c.Length > 0)) return true;
+
+        Dictionary<Procedure.Dose[], IEnumerable<Slug>> filteredSlugs = new Dictionary<Procedure.Dose[], IEnumerable<Slug>>();
+        foreach (Procedure.Dose[] conditions in conditionsLists)
+            filteredSlugs.Add(conditions, slugs.Where(s => conditions.Any(d => s.drugs.Any(drug => drug.drug.GetType().Name == d.drug && drug.strength == d.dosage))));
+
+        conditionsLists = conditionsLists.OrderBy(l => filteredSlugs[l].Count()).ToArray();
+        if (conditionsLists[0].Length == 0) {
+            if (conditionsLists[1].Length == 0) {
+                if (conditionsLists[2].Length == 0) {
+                    if (conditionsLists[3].Length == 0 || filteredSlugs[conditionsLists[3]].Count() > 0) {
+                        return true;
+                    }
+                } else {
+                    foreach (Slug slug in filteredSlugs[conditionsLists[2]]) {
+                        if (conditionsLists[3].Length == 0 || filteredSlugs[conditionsLists[3]].Except(new Slug[] { slug }).Count() > 0) {
+                            return true;
+                        }
+                    }
+                }
+            } else {
+                foreach (Slug slug1 in filteredSlugs[conditionsLists[1]]) {
+                    if (conditionsLists[2].Length == 0) {
+                        if (conditionsLists[3].Length == 0 || filteredSlugs[conditionsLists[3]].Count() > 0) {
+                            return true;
+                        }
+                    } else {
+                        foreach (Slug slug2 in filteredSlugs[conditionsLists[2]].Except(new Slug[] { slug1 })) {
+                            if (conditionsLists[3].Length == 0 || filteredSlugs[conditionsLists[3]].Except(new Slug[] { slug1, slug2 }).Count() > 0) {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+        } else {
+            foreach (Slug slug1 in filteredSlugs[conditionsLists[0]]) {
+                foreach (Slug slug2 in filteredSlugs[conditionsLists[1]].Except(new Slug[] { slug1 })) {
+                    if (conditionsLists[2].Length == 0) {
+                        if (conditionsLists[3].Length == 0 || filteredSlugs[conditionsLists[3]].Count() > 0) {
+                            return true;
+                        }
+                    } else {
+                        foreach (Slug slug3 in filteredSlugs[conditionsLists[2]].Except(new Slug[] { slug1, slug2 })) {
+                            if (conditionsLists[3].Length == 0 || filteredSlugs[conditionsLists[3]].Except(new Slug[] { slug1, slug2, slug3 }).Count() > 0) {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false;
     }
 }

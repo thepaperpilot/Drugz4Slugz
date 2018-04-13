@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
   m_Name: gay 1
   m_EditorClassIdentifier: 
-  trigger: Filler/Random
+  trigger: Events/Medium Dose/Anime
   comments:
   - commenterNumber: 9
     delay: 0

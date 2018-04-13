@@ -19,5 +19,5 @@ MonoBehaviour:
   - commenterNumber: 5
     delay: 0.7
     comment: '*watching. fuck it''s already happening.'
-  excitementDelta: -3
+  excitementDelta: 0
   adviceRating: 0
