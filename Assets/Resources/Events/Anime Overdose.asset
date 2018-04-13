@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
+  m_Name: Anime Overdose
+  m_EditorClassIdentifier: 
+  trigger: Events/Overdose/Anime
+  comments:
+  - commenterNumber: 0
+    delay: 0.3
+    comment: noooo!
+  - commenterNumber: 1
+    delay: 0.1
+    comment: <sprite=1><sprite=1><sprite=1><sprite=1>
+  - commenterNumber: 2
+    delay: 0.1
+    comment: <sprite=1><sprite=1><sprite=1><sprite=1><sprite=1><sprite=1><sprite=1><sprite=1><sprite=1><sprite=1>
+  - commenterNumber: 3
+    delay: 0.1
+    comment: top 10 saddest anime deaths
+  - commenterNumber: 4
+    delay: 0.1
+    comment: <sprite=1><sprite=0><sprite=1><sprite=0><sprite=1><sprite=0>
+  - commenterNumber: 5
+    delay: 0.3
+    comment: this is just like in that one anime
+  - commenterNumber: 5
+    delay: 0.1
+    comment: so sad <sprite=1>
+  excitementDelta: 4
+  adviceRating: 0
