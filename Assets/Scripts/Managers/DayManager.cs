@@ -87,9 +87,11 @@ public class DayManager : MonoBehaviour {
         instance.liveButton.interactable = false;
 
         note = "Good Work!";
-        if (slugs.Length == 0) {
+        if (slugs.Length == 0)
             note = "Where were the slugs?";
-        } else if (slugs.Where(s => s.drugs.Count == 0).Count() == 0)
+        else if (slugs.Any(s => s.drugs.Where(d => d.strength - d.resistance > d.drug.maxDosage).Count() != 0))
+            note = "Do not OD the slugs"; 
+        else if (slugs.Where(s => s.drugs.Count == 0).Count() == 0)
             note = "Include a control group";
     }
 }
