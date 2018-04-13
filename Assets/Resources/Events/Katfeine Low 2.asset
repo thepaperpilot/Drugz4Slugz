@@ -15,7 +15,7 @@ MonoBehaviour:
   comments:
   - commenterNumber: 0
     delay: 1
-    comment: "\rbetter than twilight"
+    comment: better than twilight
   - commenterNumber: 3
     delay: 1
     comment: gold

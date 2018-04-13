@@ -18,6 +18,6 @@ MonoBehaviour:
     comment: eugh
   - commenterNumber: 1
     delay: 3
-    comment: slugma noooo
+    comment: slugma noooo <sprite=0><sprite=0><sprite=0>
   excitementDelta: 0
   adviceRating: 0

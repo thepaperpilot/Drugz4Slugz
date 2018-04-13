@@ -15,6 +15,6 @@ MonoBehaviour:
   comments:
   - commenterNumber: 0
     delay: 1
-    comment: "\rfuck this is just like pokemon"
+    comment: fuck this is just like pokemon
   excitementDelta: 0
   adviceRating: 1

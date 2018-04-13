@@ -39,7 +39,7 @@ MonoBehaviour:
     comment: I'm posting here because no one will see it.
   - commenterNumber: 3
     delay: 0.2
-    comment: "\rTHE ALAMOOOOOOOOOOOO"
+    comment: THE ALAMOOOOOOOOOOOO
   - commenterNumber: 3
     delay: 0.1
     comment: hi mom
@@ -48,7 +48,7 @@ MonoBehaviour:
     comment: I WAS SUPPOSED TO SLSTP AN HOUr AFO
   - commenterNumber: 7
     delay: 0.1
-    comment: "\rdank"
+    comment: dank
   - commenterNumber: 8
     delay: 0.2
     comment: yeeee

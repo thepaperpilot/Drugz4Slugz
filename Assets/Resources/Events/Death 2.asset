@@ -33,7 +33,7 @@ MonoBehaviour:
     comment: '...was it wroth it, scientists?'
   - commenterNumber: 5
     delay: 0.1
-    comment: "Really makes ya thing...\r\n"
+    comment: "Really makes ya thing...\r <sprite=1>"
   - commenterNumber: 7
     delay: 0.1
     comment: "*thik\r"
@@ -43,5 +43,8 @@ MonoBehaviour:
   - commenterNumber: 7
     delay: 1
     comment: '**THICC'
+  - commenterNumber: 9
+    delay: 1
+    comment: <sprite=0>
   excitementDelta: 3
   adviceRating: 0

@@ -15,7 +15,7 @@ MonoBehaviour:
   comments:
   - commenterNumber: 1
     delay: 1
-    comment: "\ri could do the same thing at home"
+    comment: i could do the same thing at home
   - commenterNumber: 1
     delay: 1
     comment: AND it'd be twice as entertaining

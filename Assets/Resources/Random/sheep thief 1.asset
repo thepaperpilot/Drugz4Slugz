@@ -27,6 +27,6 @@ MonoBehaviour:
     comment: I wish I was a slug
   - commenterNumber: 7
     delay: 3
-    comment: "\rright?"
+    comment: right?
   excitementDelta: 4
   adviceRating: 0

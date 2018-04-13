@@ -15,6 +15,6 @@ MonoBehaviour:
   comments:
   - commenterNumber: 7
     delay: 2
-    comment: "\r/roll Con Saving Throw"
+    comment: /roll Con Saving Throw
   excitementDelta: 1
   adviceRating: 0

@@ -42,6 +42,6 @@ MonoBehaviour:
     comment: fuk dis
   - commenterNumber: 8
     delay: 1
-    comment: i'm NEVER gonna UNSEE THT
+    comment: i'm NEVER gonna UNSEE THT <sprite=1>
   excitementDelta: 3
   adviceRating: 0
