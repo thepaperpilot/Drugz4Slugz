@@ -9,21 +9,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
-  m_Name: Wings
+  m_Name: random 2
   m_EditorClassIdentifier: 
-  trigger: Events/Overnight Change/Anime
+  trigger: Filler/Random
   comments:
-  - commenterNumber: 0
-    delay: 3
-    comment: Whoah!
-  - commenterNumber: 1
-    delay: 0.5
-    comment: Were those there before?
-  - commenterNumber: 0
-    delay: 0.5
-    comment: I don't think so lol
-  - commenterNumber: 2
+  - commenterNumber: 9
+    delay: 0.1
+    comment: "hey guys, you ever wonder why we're here?\r"
+  - commenterNumber: 4
     delay: 1
-    comment: Fucking sciene lmao
-  excitementDelta: 2
+    comment: "Kinda makes you think, huh?\r"
+  - commenterNumber: 6
+    delay: 0.8
+    comment: fuck the shut up
+  - commenterNumber: 1
+    delay: 1
+    comment: save me from my mortal shell slug lord
+  excitementDelta: 0
   adviceRating: 0

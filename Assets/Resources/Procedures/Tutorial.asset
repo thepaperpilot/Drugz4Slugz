@@ -11,9 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce6dce17a1235274db851bde428ac94a, type: 3}
   m_Name: Tutorial
   m_EditorClassIdentifier: 
-  description: Good Morning! Today's experiment is to simply get you adjusted to the
-    environment. All you need to do is test the effects of a single dose of pepper
-    on a slug. Make sure to include a slug to act as the control group!
+  description: "Good Morning, and welcome to your new job as a D4S Researcher! \n\n
+    \   As you know, D4S streams all results of drug testing for posterity and fun.
+    \ But don't worry, today's experiment is simply to get you adjusted to your workspace,
+    and our livestreaming equipment.  All you need to do is test the effects of a
+    single dose of pepper on a single slug and run a test stream showing the results.
+    \n\n    Make sure to add a slug to the control group before proceeding!"
   firstSlug:
   - drug: Pepper
     dosage: 1

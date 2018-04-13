@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
+  m_Name: Katfeine High
+  m_EditorClassIdentifier: 
+  trigger: Events/High Dose/Katfeine
+  comments:
+  - commenterNumber: 4
+    delay: 1
+    comment: HO BOy
+  - commenterNumber: 2
+    delay: 1
+    comment: Lol, I get it
+  - commenterNumber: 6
+    delay: 0.3
+    comment: "SOMEONE LET ME OFF THIS WILD RIDE\r\n"
+  - commenterNumber: 2
+    delay: 0
+    comment: it's twitching
+  - commenterNumber: 0
+    delay: 0.1
+    comment: GOTTA Go FAST
+  - commenterNumber: 2
+    delay: 0.1
+    comment: as in twitch.tv
+  - commenterNumber: 3
+    delay: 1
+    comment: "HELP I CANT STOP WATCHING\r"
+  - commenterNumber: 1
+    delay: 0.2
+    comment: I'm posting here because no one will see it.
+  - commenterNumber: 3
+    delay: 0.2
+    comment: "\rTHE ALAMOOOOOOOOOOOO"
+  - commenterNumber: 3
+    delay: 0.1
+    comment: hi mom
+  - commenterNumber: 3
+    delay: 0
+    comment: I WAS SUPPOSED TO SLSTP AN HOUr AFO
+  - commenterNumber: 7
+    delay: 0.1
+    comment: "\rdank"
+  - commenterNumber: 8
+    delay: 0.2
+    comment: yeeee
+  - commenterNumber: 9
+    delay: 0.2
+    comment: fuck you I saw you
+  excitementDelta: 5
+  adviceRating: 1

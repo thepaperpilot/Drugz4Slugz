@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78966dbcf97360244996bf076a51c1dd, type: 3}
+  m_Name: Salt High 1
+  m_EditorClassIdentifier: 
+  trigger: Events/High Dose/Salt
+  comments:
+  - commenterNumber: 0
+    delay: 1
+    comment: "\rThis isn't what I signed up for."
+  - commenterNumber: 4
+    delay: 0.4
+    comment: i never asked for this
+  - commenterNumber: 0
+    delay: 1
+    comment: 'D4S: teh deal has chaneg. pray i do not alter it againn'
+  - commenterNumber: 1
+    delay: 1
+    comment: i did this when I was growing up
+  - commenterNumber: 2
+    delay: 1
+    comment: that's horrible!
+  - commenterNumber: 1
+    delay: 1
+    comment: yea man
+  - commenterNumber: 2
+    delay: 1
+    comment: WTF don't be so cool with that
+  excitementDelta: 2
+  adviceRating: 0
