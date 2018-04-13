@@ -6,7 +6,7 @@ public class DrugManager : MonoBehaviour {
 
     public static DrugManager instance;
     
-    private Drug selected;
+    public static Drug selected;
 
     void Awake() {
         instance = this;
